@@ -4,16 +4,15 @@
     <meta charset="utf-8">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
-    <script type="text/javascript" src="app.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="input-btn-container">
         <div class="input-container">
-          <p class="display"></p>
+          <p id="total" class="display"></p>
         </div>
         <div class="btn-container">
-          <div class="btn">AC</div>
+          <div class="btn" data-value="AC" onclick="displayDigit()">AC</div>
           <div class="btn">CE</div>
           <div class="btn">%</div>
           <div class="btn">/</div>
@@ -36,5 +35,7 @@
         </div>
       </div>
     </div>
+
+    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
